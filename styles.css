@@ -1,5 +1,6 @@
 body {
 	text-align: center;
+	overflow: hidden;
 }
 
 h1 {
@@ -12,7 +13,7 @@ h1 {
 
 #col1, #col2, #col3 {
 	float: left;
-	width: 31.5%;
+	width: 31.9%;
 	border: solid 5px pink;
 	margin: 5px;
 	border-radius: 20px;
