@@ -1,23 +1,42 @@
-var c = 0
-var o = 0
-var s = 0
-
 $(document).ready(function(){
 
+	$("#choc_count").text(Cookies.get("chocolate"))
+	$("#oreo_count").text(Cookies.get("oreo"))
+	$("#samoa_count").text(Cookies.get("samoa"))
+
+	if (Cookies.get("chocolate") == 0) {
+		c = parseInt(0)
+	} else {
+		c = Cookies.get("chocolate")
+	}	
+
+	if (Cookies.get("oreo") == 0) {
+		o = parseInt(0)
+	} else {
+		o = Cookies.get("oreo")
+	}
+
+	if (Cookies.get("samoa") == 0) {
+		s = parseInt(0)
+	} else {
+		s = Cookies.get("samoa")
+	}	
+
 	$("#choc").on("click", function(){
-		c = c+1 ;
+		c = parseInt(c) + 1 ;
 		Cookies.set("chocolate", c);
 		$("#choc_count").text(Cookies.get("chocolate"));
 	});
 
+
 	$("#oreo").on("click", function(){
-		o = o+1 ;
+		o = parseInt(o) + 1 ;
 		Cookies.set("oreo", o);
 		$("#oreo_count").text(Cookies.get("oreo"));
 	});
 
 	$("#samoa").on("click", function(){
-		s = s+1 ;
+		s = parseInt(s) + 1 ;
 		Cookies.set("samoa", s);
 		$("#samoa_count").text(Cookies.get("samoa"));
 	});
@@ -27,6 +46,9 @@ $(document).ready(function(){
 		Cookies.set("chocolate", 0)
 		Cookies.set("oreo", 0)
 		Cookies.set("samoa", 0)
+		c = 0
+		o = 0
+		s = 0
 		$("#choc_count").text(Cookies.get("chocolate"))
 		$("#oreo_count").text(Cookies.get("oreo"))
 		$("#samoa_count").text(Cookies.get("samoa"))
