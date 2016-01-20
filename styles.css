@@ -1,0 +1,29 @@
+body {
+	margin-top: 20px;
+	text-align: center;
+}
+
+h1 {
+	background-color: pink;
+	padding: 5px;
+	margin-left: 350px;
+	margin-right: 350px;
+}
+
+#col1, #col2, #col3 {
+	float: left;
+	width: 33.33%;
+}
+
+
+#choc, #oreo, #samoa {
+	height: 200px;
+}
+
+#guilty {
+	clear: both;
+	display: block;
+	margin: 0 auto;
+	border: solid pink 5px;
+	height: 250px;
+}
