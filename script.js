@@ -7,7 +7,7 @@ $(document).ready(function(){
 	if (Cookies.get("chocolate") == 0) {
 		c = parseInt(0)
 	} else {
-		c = Cookies.get("chocolate")
+		c = parseInt(Cookies.get("chocolate"))
 	}	
 
 	if (Cookies.get("oreo") == 0) {
